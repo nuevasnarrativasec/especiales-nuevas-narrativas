@@ -1,0 +1,799 @@
+html, 
+body{
+    box-sizing: border-box;    
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'actobook';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/acto-book-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/acto-book-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: "GuardianEgyp-Light";
+	src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Light.woff') format('woff'),
+		 url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Light.woff2') format('woff2');
+}
+@font-face {
+	font-family: "GuardianEgyp-Regular";
+	src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.woff') format('woff'),
+		 url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: "GuardianEgyp-Medium";
+	src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Medium.woff') format('woff'),
+	     url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: "GuardianTextEgypt-Bold";
+	src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianTextEgypt-Bold.woff') format('woff'),
+		 url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianTextEgypt-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: "GuardianTextEgypt-Black";
+	src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianTextEgypt-Black.woff') format('woff'),
+		 url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianTextEgypt-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: '';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/especiales-nuevas-narrativas-especdis/fonts/NotoSerifKR-Black-Alphabetic.woff2') format('woff2'),
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/especiales-nuevas-narrativas-especdis/fonts/NotoSerifKR-Black-Alphabetic.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: '';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/especiales-nuevas-narrativas-especdis/fonts/NotoSerifKR-SemiBold-Alphabetic.woff2') format('woff2'),
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/especiales-nuevas-narrativas-especdis/fonts/NotoSerifKR-SemiBold-Alphabetic.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: '';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/especiales-nuevas-narrativas-especdis/fonts/NotoSerifKR-Medium-Alphabetic.woff2') format('woff2'),
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/especiales-nuevas-narrativas-especdis/fonts/NotoSerifKR-Medium-Alphabetic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    margin-bottom: 50px;
+    width: 100%;
+}
+    .header-comercio{    
+        border-bottom: 1px solid #d4d4d4;      
+        padding: 30px 0;
+        position: relative;
+        width: 100%;
+    }
+        .ctn-header-comercio{
+            margin: 0 auto;     
+            max-width: 1200px;
+            padding: 0 5px;
+            text-align: center;
+        }
+            .btn-menu{
+                cursor: pointer;
+                float: left;
+            }
+                .btn-menu div{
+                    background-color: black;
+                    border-radius: 10px;
+                    height: 4px;
+                    margin: 6px 0;
+                    width: 35px;                    
+                }
+            .ctn-header-comercio a{
+                display: inline-block;                
+                text-indent: -9999px;
+            }
+                .logo-especiales{
+                    max-width: 200px;
+                }
+                a.logo-comercio{
+                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/logo-comercio.png?v2) no-repeat 0 0;
+                    background-size: 100%;
+                    height: 30px;
+                    margin-top: 10px;
+                    width: 110px;
+                }
+                #social,
+                #social-2{
+                    float: right;
+                }
+                     #social ul,
+                     #social-2 ul{
+                        display: inline-block;
+                        margin: 0 auto;
+                        padding: 0;
+                        vertical-align: middle;
+                    }
+                        #social ul li,
+                        #social-2 ul li{
+                            display: inline-block;
+                            margin: 0 3px;
+                            vertical-align: middle;
+                        }
+                            #social ul li a,
+                            #social-2 ul li a{
+                                height: 36px;
+                                width: 36px;
+                            }
+        #fb{
+            background-size: 100%;
+            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/fb-icon.png?v2) no-repeat 0 0;
+            border: none;
+            display: inline-block;
+            height: 36px;
+            text-indent: -9999px;
+            width: 36px;
+        }
+
+        #wst{
+            background-size: 100%;
+            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/wst-icon.png?v2) no-repeat 0 0;
+            border: none;
+            display: none;
+            height: 36px;
+            text-indent: -9999px;
+            width: 36px;
+        }
+
+        #tw{
+            background-size: 100%;
+            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/tw-icon.png?v2) no-repeat 0 0;
+            border: none;
+            display: inline-block;
+            height: 36px;
+            text-indent: -9999px;
+            width: 36px;
+        } 
+                
+.box-cabecera{
+    /*margin-bottom: 100px;*/
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+}
+    .box-ctn-cabecera{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+        .box-ctn-cabecera img{
+            box-shadow: 7px 1px 18px #969696;
+            display: inline-block;
+            max-width: 600px;
+            vertical-align: top;
+        }
+    .ctn-box-operativo{
+        margin-bottom: 100px;
+        font-size: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-operativo{
+        max-width: 100%;
+        width: 100%;
+    }
+    .layer{
+        background: rgba(0,0,0,0.35);
+        bottom: 0;
+        font-size: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .box-main-titular{
+        display: inline-block;
+        margin-left: -4px;
+        padding: 50px;
+        vertical-align: top;
+    }
+        .box-main-titular img{
+            display: inline-block;
+            margin: 20% 0;
+            max-width: 200px;
+            vertical-align: top;
+        }
+        .titular{
+            text-align: center;
+            margin-bottom: 33px;
+            /*text-shadow: 0 0 30px rgba(0,0,0,0.7);*/
+        }
+            .bajada h1{
+                color: #000;
+                font-family: '';
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 1;
+                margin: 0 auto;
+                padding: 0;
+                text-align: left;
+            }
+        .bajada{  
+            display: inline-block;
+            max-width: 300px;
+            vertical-align: top; 
+            
+        }
+            .bajada span{
+                display: block;
+                font: 1em/1.2 'actobold';
+            }
+            .bajada p{
+                color: #000;
+                font-family: '';
+                font-weight: 500;
+                line-height: 1.2;
+                text-align: left;
+            }  
+
+.box-portada{
+    margin-bottom: 100px;
+    width: 100%;
+}  
+    .bg-portada{
+        /*background: url(/especiales/alan-garcia-una-vida-de-portada-ecpm/img/bg-portada.jpg?v4) no-repeat center -40px;*/
+        background-size: cover;
+        height: 100%;
+    }   
+
+    .btn-subir{
+        bottom: 10px;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+    }
+        .btn-subir img{
+            max-width: 40px;
+        }
+
+.main{
+    margin: 50px auto 0;
+    max-width: 1085px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+    .ctn-main{
+        margin: 0 auto;
+        width: 980px;
+    }
+    h1{
+        color: #d72054;
+        font: 3.1em/1.2 "GuardianEgyp-Light";
+        margin: 20px auto 0;
+        padding: 20px 0 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        margin-top: 2vh;
+    }
+        h1 a{
+            color: #fff;
+            text-decoration: none;
+        }
+        h1 span{
+            color: #ffca05;
+        }
+    h2{
+        font: 1.2em/1.2 'actobook';
+        margin: 20px auto;
+        max-width: 550px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        margin-top: 40vh;
+    }
+        h2 span{
+            font-family: 'actobold';
+        }
+    h3{
+        color: #000;
+        font: 17px/1.2  "actobook"; 
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0;
+        text-align: center;
+    }
+        h3 span{
+            display: block;
+            font-family: "actobook"; 
+            font-size: 17px;
+        }
+    h4{
+        /*font: 24px/1.3 "GuardianTextEgypt-Black";*/
+        margin: 0 auto;        
+    }
+    h5{
+        color: #000;
+        font-family: '';
+        font-weight: 900;
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    p{
+        font: 18px/1.4 "GuardianEgyp-Regular";
+        max-width: 570px;
+        margin: 20px auto;
+        text-align: left;
+    } 
+    h6{
+        background: #fff;
+        color: #808080;
+        font: 1em/1.2 'actobook';
+        margin: 0 auto;
+    }
+
+    .box-item{
+        display: inline-block;
+        margin: 20px 50px;
+        max-width: 350px;        
+        vertical-align: top;
+    }
+        .box-item img{
+            max-width: 300px;
+        }
+        .box-item h4{
+            line-height: 1;
+            margin: 15px auto;
+            max-width: 300px;
+            text-align: left;
+        }
+            .box-item h4 a{
+                color: #000;
+                font-family: '';
+                font-size: 22px;
+                font-weight: 900;                
+                text-align: left;
+                text-decoration: none;
+            }
+                .box-item h4 a:hover{
+                    text-decoration: underline;
+                }
+        .item{
+            border: 1px solid #000;
+            display: inline-block;
+            margin: 0 auto;
+            max-width: 500px;
+            padding: 25px;
+            vertical-align: top;
+        }
+           
+            .item.juego{
+                max-width: 1000px;
+            }
+        .solo{
+            max-width: 100%;
+        }
+        .box-item p{
+            font-size: 16px;
+            margin: 5px auto 20px;
+            max-width: 300px;
+        }
+        .oscuro{
+            color: #000 !important;
+            margin: 10px 25px;
+            text-align: left;
+        }
+
+@media only screen and (max-width: 640px){
+
+    #social ul li a.wst{
+        display: block;
+    }    
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.1em;
+    }
+
+    .ctn-main{
+        width: 95%;
+    }
+    .box-main-titular{
+        padding: 20px 0;
+        top: 46%;
+        width: 100%;
+    }
+        .titular h1{
+            font-size: 45px;
+        }
+        .bajada{
+            border: none;
+            margin-left: 20px;
+            padding: 0 15px;
+            width: 90%;            
+        }
+            .bajada h2{
+                font-size: 22px;
+            }
+            
+    .box-alcalde{
+        width: 130px;
+    }
+    .movil{
+        display: block;
+        overflow: hidden;
+    }
+    .desktop{
+        display: none;
+    }
+
+    iframe{
+        height: 300px;
+    }
+    
+    #wst{
+        display: inline-block;
+    }
+
+    .full-height-minus-header {
+        /** height: calc(40vh - 50px) !important;**/
+    }
+
+    .fadein img{
+        height: 100%;
+        background-size: cover;
+        left: -50%;
+        width: 200%;
+    }
+
+    .cifras{
+        /*width: 100%;*/
+    }
+
+    h1 span{
+        display: block;
+    }
+    .border{
+        border: none;
+        padding: 0;
+    }
+
+    .box-main-titular img{
+        display: block;
+        margin: 40px 30px;
+    }
+    .box-item{
+        margin: 20px;
+    }
+        .box-item h4{
+            /*max-width: 250px;*/
+        }
+        .box-item p{
+            max-width: 250px;
+        }
+    .logo-comercio-negro{
+        display: none;
+    }
+    .ctn-header-interior .logo-ecdata-negro {
+        float: left;
+        margin: 10px;        
+    }
+    .box-buscador{
+        display: block;
+        float: inherit !important;
+        margin: 20px auto 0;
+    }
+        .box-buscador input{
+            width: 60%;
+        }
+    .box-cabecera{
+        height: auto;
+    }
+    img.flecha{
+        display: block;
+        left: inherit !important;
+        margin: 20px auto;
+        margin-left: auto !important;
+        max-width: 65px; 
+        position: relative !important;
+    }
+    .ctn-header-comercio{
+        padding: 0 20px;
+    }
+    .box-popup .btn-cerrar{
+        left: 5%;
+        max-width: 30px;
+    }
+    .oscuro{
+        margin: 10px;
+    }
+
+}
+
+
+/** Marshall **/
+
+.full-height {
+    height: 100vh
+}
+
+.full-height-minus-header {
+    height: calc(50vh - 50px);
+    position: relative;
+}
+.hed-video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    -webkit-transition: none;
+    transition: none;
+}
+
+/** grids **/
+
+.boardz ul{
+    /* flex-direction: column; */
+    flex: none !important;
+    /* justify-content: space-between; */
+    display: block;
+    list-style-type: none; 
+    padding: 4px 0px 4px 0px;
+    vertical-align: top;
+    width: 100%;
+}
+    .beautiful li{
+        background: #fff;
+        border-radius: 0 !important;
+        display: inline-block;
+        max-height: 488px;
+        max-width: 350px;
+        padding: 0 !important;
+        vertical-align: top;
+    }
+
+.main-notas{
+    display: block !important;
+}
+    .main-notas li{
+        overflow: hidden;
+        position: relative;
+    }
+        .main-notas li span{
+            background: #f5f206;
+            font: 1em/1 'actobold';
+            padding: 10px;
+            position: absolute;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .main-notas li h3{
+            bottom: 0;
+            position: absolute;
+        }
+
+            .main-notas li h3.documental::before { 
+                background: #ffca05;
+                color: #000;
+                content: "documental";
+                font: 0.8em/1 'actobold';
+                left: 0;
+                padding: 10px;
+                position: absolute;
+                text-transform: uppercase;
+                top: -40px;
+                width: 100%;
+            }
+            .main-notas li h3.reportaje::before { 
+                background: #ffca05;
+                color: #000;
+                content: "reportaje";
+                font: 0.8em/1 'actobold';
+                left: 0;
+                padding: 10px;
+                position: absolute;
+                text-transform: uppercase;
+                top: -40px;
+                width: 100%;
+            }
+            .main-notas li h3.especial::before { 
+                background: #ffca05;
+                color: #000;
+                content: "especial";
+                font: 0.8em/1 'actobold';
+                left: 0;
+                padding: 10px;
+                position: absolute;
+                text-transform: uppercase;
+                top: -40px;
+                width: 100%;
+            }
+
+.swiper-wrapper{
+        margin: 30px auto;
+    }
+        .swiper-slide img{
+            display: block;
+            margin: 0 auto;
+            max-width: 50px;
+        }
+        .swiper-slide.plata h4{
+            color: #959595;
+        }
+        .swiper-slide.bronce h4{
+            color: #a36d37;
+        }
+        .swiper-container{
+
+        }
+            .swiper-container h4{
+                color: #d8a301;
+                min-height: auto;
+                padding: 0;
+                text-align: center;
+            }
+            .swiper-container p{
+                margin: 0 auto;
+                text-align: center;
+            }
+            .swiper-container a{
+                color: #000;
+                display: block;
+                font: 1em/1 'actobold';
+                text-align: left;
+            }
+    
+    .swiper-pagination-bullet-active {
+        background: #d8a301 !important;
+    }
+
+
+
+span.credito{
+    font: 14px/1.2 'actobook';
+    display: block;
+    text-align: center;
+}
+
+.footer{
+    background: #000;
+}
+    .footer img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100px;
+        padding: 15px 0;
+    }
+
+a.btn{   
+    color: #000;
+    display: block;
+    font-family: '';
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+     
+
+img.flecha{
+    bottom: 0;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -25px;
+    max-width: 65px;
+    position: absolute;    
+}
+
+.box-popup{
+    background: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+    .ctn-popup{
+        padding-top: 50px;
+    }
+        .btn-cerrar{
+            cursor: pointer;
+            left: 10%;
+            max-width: 40px;
+            position: absolute;
+            top: 5%;
+        }
+        .ctn-popup ul{
+            list-style-type: none;
+            margin: 0 auto;
+            max-width: 200px;
+            padding: 30px 0;
+        }
+            .ctn-popup ul li{
+
+            }   
+                .ctn-popup ul li{
+                    border-bottom: 1px solid #cecece;
+                    color: #000;
+                    cursor: pointer;
+                    display: block;
+                    font-family: '';
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                }
+                    .ctn-popup ul li i{
+                        border-radius: 32px;
+                        display: inline-block;
+                        height: 12px;
+                        vertical-align: middle;
+                        width: 12px;
+                    }
+                        .ctn-popup ul li:nth-child(1) i{
+                            background-color: #dac766;
+                        }
+                        .ctn-popup ul li:nth-child(2) i {
+                            background-color: #3e76c6;
+                        }
+                        .ctn-popup ul li:nth-child(3) i {
+                            background-color: #68bfce;
+                        }
+                        .ctn-popup ul li:nth-child(4) i {
+                            background-color: #bd79be;
+                        }
+                        .ctn-popup ul li:nth-child(5) i {
+                            background-color: #b9342c;
+                        }
+                        .ctn-popup ul li:nth-child(6) i {
+                            background-color: #6fcd5c;
+                        }
+                        .ctn-popup ul li:nth-child(7) i {
+                            background-color: #e28448;
+                        }
+                        .ctn-popup ul li:nth-child(8) i {
+                            background-color: #9ca5f8;
+                        }
+                        .ctn-popup ul li:nth-child(9) i {
+                            background-color: #aab8ba;
+                        }
+                        .ctn-popup ul li:nth-child(10) i {
+                            background-color: #1292a4;
+                        }
+                        
+.box-buscador{
+    float: right;
+}
+    .box-buscador img{
+        display: inline-block;
+        max-width: 20px;
+        vertical-align: top;
+    }
+    .box-buscador input{
+        border: 1px solid #c2c2c2;
+        border-radius: 32px;
+        padding: 3px;
+    }
+
+p.todos{
+    background-color: #000;
+    border-radius: 32px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "GuardianEgyp-Medium";
+    max-width: 120px;
+    padding: 10px;
+    text-align: center;
+}
+    p.todos:hover{
+        text-decoration: underline;
+    }
